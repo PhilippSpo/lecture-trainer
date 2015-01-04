@@ -1,0 +1,15 @@
+<template name="answer">
+	<div class='page'>
+		<h4>Frage</h4>
+		{{question.answer}}
+		<h4>Habe ich gewusst</h4>
+		<button id="correct" type="button" class="btn btn-success">
+			<i class="mdi-navigation-check"></i>
+			<div class="ripple-wrapper"></div>
+		</button>
+		<button id="wrong" type="button" class="btn btn-danger">
+			<i class="mdi-navigation-close"></i>
+			<div class="ripple-wrapper"></div>
+		</button>
+	</div>
+</template>

@@ -11,5 +11,15 @@ Template.questionList.events({
 		}, {
 			animation: 'fadeIn'
 		});
+	},
+	'click .question-item': function() {
+		var template = Template.instance();
+		Bender.go('questionDetail', {
+			chapterId: template.data.chapter._id,
+			questionId: this._id
+		}, {
+			animation: 'fadeIn',
+			query: 'show=question'
+		});
 	}
 });
