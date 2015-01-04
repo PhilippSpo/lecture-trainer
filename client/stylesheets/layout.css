@@ -1,0 +1,6 @@
+.layout {
+  height: 100%;
+  /* to prevent the scrollbars from showing during an animation */
+  overflow: hidden;
+  /*width: 100%;*/
+}

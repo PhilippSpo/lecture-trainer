@@ -1,0 +1,39 @@
+<template name="chapterList">
+	<h1>BWL2 - Kapitelübersicht</h1>
+	<ul class="chapters-list list-group">
+		<li class="list-group-item list-group-item-heading">
+			<div class="col-lg-10">
+				<span class="simptip-position-top" data-tooltip="Kapitel">
+					<i class="mdi-action-assignment"></i>
+				</span>
+				</div>
+			<div class="col-lg-1">
+				<span class="simptip-position-top" data-tooltip="Fragen (Korrekt)">
+					<i class="mdi-action-done mdi-material-green"></i>
+				</span>
+			</div>
+			<div class="col-lg-1">
+				<span class="simptip-position-top" data-tooltip="Fragen (Gesamt)">
+					<i class="mdi-navigation-menu"></i>
+				</span>
+			</div>
+		</li>
+	{{#each chapters}}
+		<li class="list-group-item">
+			<div class="col-lg-10">{{title}}</div>
+			<div class="col-lg-1">10</div>
+			<div class="col-lg-1">10</div>
+		</li>
+	{{/each}}
+	</ul>
+	<form class="add-chapter">
+		<div class="input col-lg-2">
+			<div class="form-control-wrapper">
+				<input type="text" name="chaptertitle" class="form-control empty">
+				<div class="floating-label">Kapitelname</div>
+				<span class="material-input"></span>
+			</div>
+		</div>
+		<button id="addChapter" type="submit" class="btn btn-success btn-flat">Kapitel hinzufügen</button>
+	</form>
+</template>

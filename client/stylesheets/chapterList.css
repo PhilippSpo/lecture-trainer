@@ -1,0 +1,20 @@
+.add-chapter>.input {
+	margin-top: 10px;
+}
+
+.chapters-list .list-group-item {
+	padding: 16px;
+}
+
+.chapters-list .list-group-item:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.chapters-list .list-group-item-heading {
+	/* set overflow to visible in order to see tooltips */
+	overflow: visible;
+}
+
+.chapters-list .list-group-item-heading:hover {
+	background: none;
+}
