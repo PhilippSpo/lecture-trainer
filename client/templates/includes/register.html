@@ -1,0 +1,14 @@
+<template name="register">
+    <form class="form-signin text-center" role="form" style="width:350px;float:none;margin:0 auto;" autocomplete="off">
+        <h3 class="form-signin-heading">Please fill in some information :-)!</h3>
+        <input name="email" type="email" class="form-control" placeholder="Email Adresse" required autofocus>
+        <input name="name" type="text" class="form-control" placeholder="Nachname" required autofocus>
+        <input name="firstname" type="text" class="form-control" placeholder="Vorname" required autofocus>
+        <input name="password" type="password" class="form-control" placeholder="Passwort" required>
+        <input name="repeatPassword" type="password" class="form-control" placeholder="Passwort wiederholen" required>
+        <button id="submitRegistration" class="btn btn-lg btn-primary btn-block" type="button">Register</button>
+    </form>
+    <div class="text-center" style="width:350px;float:none;margin:0 auto;">
+        <button id="backToStart" class="btn btn-lg btn-primary btn-block" type="button">Back</button>
+    </div>
+</template>

@@ -1,5 +1,9 @@
 <template name="layout">
 	<!-- <div class="container"> -->
+	{{#if currentUser}}
+		{{currentUser}}
+        <button>Logout</button>
+	{{/if}}
 	<div id="content-container" class="container layout well page active" style="display: block;">
 		{{>yield}}
 	</div>
