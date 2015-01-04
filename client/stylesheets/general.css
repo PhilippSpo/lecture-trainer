@@ -1,0 +1,15 @@
+/* page toolbar */
+.navbar-toolbar {
+	background: none;
+	color: rgba(0, 0, 0, 0.843137);
+}
+
+.navbar .navbar-nav > li > a.btn-big {
+	font-size: 24pt;
+	padding: 12px 10px;
+}
+
+.page-title {
+	font-size: 24px;
+	padding: 12px 10px;
+}

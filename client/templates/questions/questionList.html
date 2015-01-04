@@ -1,0 +1,38 @@
+<template name="questionList">
+	<div class='page'>
+		<div class="navbar navbar-default navbar-toolbar">
+			<ul class="nav navbar-nav">
+				<li class="">
+					<a id="backButton" href="#" class="btn-big">
+						<i class="mdi-navigation-arrow-back"></i>
+						<div class="ripple-wrapper"></div>
+					</a>
+				</li>
+				<li class="page-title">
+					{{chapter.title}} - Fragekatalog
+				</li>
+			</ul>
+		</div>
+		<ul class="chapters-list list-group">
+			<li class="list-group-item list-group-item-heading">
+				<div class="col-lg-10">
+					<span class="simptip-position-top" data-tooltip="Frage">
+						<i class="mdi-action-assignment"></i>
+					</span>
+					</div>
+				<div class="col-lg-1">
+					<span class="simptip-position-top" data-tooltip="Status">
+						<i class="mdi-action-done"></i>
+					</span>
+				</div>
+			</li>
+		{{#each questions}}
+			<li class="list-group-item">
+				<div class="col-lg-10">{{question}}</div>
+				<div class="col-lg-1"><i class="mdi-action-done mdi-material-green"></i></div>
+			</li>
+		{{/each}}
+		</ul>
+		<button id="newQuestion" type="button" class="btn btn-success btn-flat">Frage hinzufügen</button>
+	</div>
+</template>

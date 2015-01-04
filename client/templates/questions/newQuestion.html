@@ -1,0 +1,26 @@
+<template name="newQuestion">
+	<div class='page'>
+		<div class="navbar navbar-default navbar-toolbar">
+			<ul class="nav navbar-nav">
+				<li class="">
+					<a id="backButton" href="#" class="btn-big">
+						<i class="mdi-navigation-arrow-back"></i>
+						<div class="ripple-wrapper"></div>
+					</a>
+				</li>
+				<li class="page-title">
+					{{chapter.title}} - Neue Frage
+				</li>
+			</ul>
+		</div>
+		<h4>Frage</h4>
+		<div class="form-control-wrapper">
+			<input type="text" id="question" class="form-control empty">
+			<div class="floating-label">Frage hier eintragen ...</div>
+			<span class="material-input"></span>
+		</div>
+		<h4>Antwort</h4>
+		<div id="answerNote"></div>
+		<button id="commitQuestion" type="button" class="btn btn-success btn-flat">Frage hinzufügen</button>
+	</div>
+</template>

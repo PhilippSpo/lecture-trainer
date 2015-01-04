@@ -1,6 +1,24 @@
-.layout {
+.content-wrapper .layout {
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+#content-container {
+}
+
+.page {
   height: 100%;
-  /* to prevent the scrollbars from showing during an animation */
-  overflow: hidden;
-  /*width: 100%;*/
+  left: 0;
+  position: absolute;
+  top: 0;
+  vertical-align: top;
+  width: 100%;
+  padding: 19px;
+  overflow: auto;
+  background-color: white;
 }

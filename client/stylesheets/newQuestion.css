@@ -1,0 +1,11 @@
+.note-toolbar .btn>i, .note-toolbar .btn>span {
+	color: black;
+}
+
+.note-toolbar .btn {
+	padding: 10px;
+}
+
+.note-toolbar .btn-group, .btn-group-vertical {
+	box-shadow: none;
+}
