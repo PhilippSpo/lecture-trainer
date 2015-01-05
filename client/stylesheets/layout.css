@@ -22,3 +22,8 @@
   overflow: auto;
   background-color: white;
 }
+
+/* to make sure the page being animated is on top */
+.velocity-animating {
+  z-index: 99;
+}
