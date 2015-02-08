@@ -13,3 +13,23 @@
 	font-size: 24px;
 	padding: 12px 10px;
 }
+
+.btn-raised {
+	color: #333 !important;
+}
+
+.btn-toolbar-bottom{
+	position:absolute;
+	bottom: 0;
+	right: 10px;
+	left: 10px;
+}
+
+@media (max-width:767px)
+{	
+   .navbar li { float: left;} /* float left */
+
+	.chapters-list .list-group-item {
+		padding: 16px 0;
+	}
+}

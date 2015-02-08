@@ -1,7 +1,35 @@
 <template name="question">
 	<div class='page'>
-		<h4>Frage</h4>
+		<div>
+			<button id="questionList" type="button" class="btn btn-default btn-raised">
+				<i class="mdi-navigation-arrow-back"></i>
+				Zurück zur übersicht
+			</button>
+		</div>
+		<h4>Frage {{question.number}}</h4>
+		<div class="question">
 		{{question.question}}
-		<button id="showAnswer" type="button" class="btn btn-default btn-flat">Antwort zeigen</button>
+		</div>
+		<div>
+			<button id="showAnswer" type="button" class="btn btn-default btn-raised">Antwort zeigen</button>
+		</div>
+		<div class="btn-toolbar-bottom">
+			{{#if hasPrev}}
+			<div class="pull-left">
+				<button id="goPrev" type="button" class="btn btn-default btn-raised">
+					<i class="mdi-navigation-arrow-back"></i>
+					<!-- vorherige Frage -->
+				</button>
+			</div>
+			{{/if}}
+			{{#if hasNext}}
+			<div class="pull-right">
+				<button id="goNext" type="button" class="btn btn-default btn-raised">
+					<!-- nächste Frage -->
+					<i class="mdi-navigation-arrow-forward"></i>
+				</button>
+			</div>
+			{{/if}}
+		</div>
 	</div>
 </template>

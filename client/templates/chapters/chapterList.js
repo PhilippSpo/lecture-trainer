@@ -10,3 +10,12 @@ Template.chapterList.events({
 		}, { animation: 'slideLeft' });
 	}
 });
+
+Template.chapterList.helpers({
+	numberOfQuestions: function () {
+		return Questions.find({chapterId: this._id}).count();
+	},
+	numberOfCorrectQuestions: function () {
+		return Questions.find({chapterId: this._id, status: 2}).count();
+	}
+});

@@ -8,7 +8,7 @@ Questions.allow({
 		return true;
 	},
 	remove: function (userId, doc) {
-		return true;
+		return false;
 	}
 });
 

@@ -8,12 +8,18 @@
 						<div class="ripple-wrapper"></div>
 					</a>
 				</li>
-				<li class="page-title">
+				<li class="page-title hidden-xs">
 					{{chapter.title}} - Fragekatalog
+				</li>
+				<li class="page-title visible-xs">
+					{{chapter.title}}
 				</li>
 			</ul>
 		</div>
-		<ul class="chapters-list list-group">
+
+		{{> reactiveTable collection=questions settings=settings}}
+
+		<!-- <ul class="chapters-list list-group">
 			<li class="list-group-item list-group-item-heading">
 				<div class="col-lg-10">
 					<span class="simptip-position-top" data-tooltip="Frage">
@@ -25,14 +31,38 @@
 						<i class="mdi-action-done"></i>
 					</span>
 				</div>
+				<div class="col-lg-1">
+					Action
+				</div>
 			</li>
 		{{#each questions}}
 			<li class="list-group-item question-item">
 				<div class="col-lg-10">{{question}}</div>
-				<div class="col-lg-1"><i class="mdi-action-done mdi-material-green"></i></div>
+				<div class="col-lg-1">
+					{{#if correct}}
+						<i class="mdi-action-done mdi-material-green"></i>
+					{{/if}}
+				</div>
+				<div class="col-lg-1">
+					<button id="delete" type="button" class="btn btn-danger">
+						<i class="mdi-navigation-close"></i>
+						<div class="ripple-wrapper"></div>
+					</button>
+				</div>
 			</li>
 		{{/each}}
-		</ul>
+		</ul> -->
 		<button id="newQuestion" type="button" class="btn btn-success btn-flat">Frage hinzufügen</button>
 	</div>
+</template>
+
+<template name="questionListItemStatus">
+	<i class="fa fa-circle {{statusColorClass}}"></i>
+</template>
+
+<template name="questionListItemActions">
+	<button id="delete" type="button" class="btn btn-danger">
+		<i class="mdi-navigation-close"></i>
+		<div class="ripple-wrapper"></div>
+	</button>
 </template>
